@@ -17,6 +17,7 @@ namespace _109_2Mid
             {
                 lb_Res.Text = lb_Res.Text + "看書" + "<br />";
             }
+
             if (Request.Form.Get("RadioButton2") == "on")
             {
                 lb_Res.Text = lb_Res.Text + "打電動" + "<br />";
@@ -25,6 +26,7 @@ namespace _109_2Mid
             {
                 lb_Res.Text = lb_Res.Text + "其他" + "<br />";
             }
+          
         }
     }
 }
