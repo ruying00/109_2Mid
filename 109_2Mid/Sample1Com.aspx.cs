@@ -12,6 +12,7 @@ namespace _109_2Mid
         protected void Page_Load(object sender, EventArgs e)
         {
             lb_Res.Text = Request.Form.Get("tb_Acc") + "<br />" + Request.Form.Get("tb_Pass") + "<br />";
+            
             if (Request.Form.Get("RadioButton1") == "on")
             {
                 lb_Res.Text = lb_Res.Text + "看書" + "<br />";
