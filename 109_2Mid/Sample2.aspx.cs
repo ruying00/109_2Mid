@@ -44,11 +44,11 @@ namespace _109_2Mid {
         {
             if (rbl_Res.Text == "是" )
             {
-                lb_Msg.Text = ddl_Area.Text + "<br />" + ddl_Place.Text + "<br />" + tb_Name.Text ;
+                lb_Msg.Text = ddl_Area.Text + "<br />" + ddl_Place.Text + "<br />" + tb_Name.Text + "<br />" + tb_Des.Text ;
             }
             else
             {
-                lb_Msg.Text = ddl_Area.Text + "<br />" + ddl_Place.Text + "<br / >" + tb_Name.Text;
+                lb_Msg.Text = ddl_Area.Text + "<br />" + ddl_Place.Text + "<br / >" + tb_Name.Text ;
             }
         }
     }
