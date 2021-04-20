@@ -14,7 +14,7 @@ namespace _109_2Mid {
         protected void ddl_Area_SelectedIndexChanged(object sender, EventArgs e)
         {
             ddl_Place.Items.Clear();
-            if (ddl_Area.SelectedValue == "北區")
+            if (ddl_Area.SelectedValue == "北區") 
             {
                 ddl_Place.Items.Add(new ListItem("基隆", "基隆"));
                 ddl_Place.Items.Add(new ListItem("台北", "台北"));
@@ -30,7 +30,26 @@ namespace _109_2Mid {
 
         protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (rbl_Res.Text == "是")
+            {
+                tb_Des.Visible = true;
+            }
+            else
+            {
+                tb_Des.Visible = false;
+            }
+        }
 
+        protected void btn_Sub_Click(object sender, EventArgs e)
+        {
+            if (rbl_Res.Text == "是" )
+            {
+                lb_Msg.Text = ddl_Area.Text + "<br />" + ddl_Place.Text + "<br />" + tb_Name.Text ;
+            }
+            else
+            {
+                lb_Msg.Text = ddl_Area.Text + "<br />" + ddl_Place.Text + "<br / >" + tb_Name.Text;
+            }
         }
     }
 }

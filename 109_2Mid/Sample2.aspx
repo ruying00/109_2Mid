@@ -30,14 +30,14 @@
                 </p>
                 <p>
                     <asp:Label ID="Label2" runat="server" Text="其他"></asp:Label>
-                    <asp:RadioButtonList ID="RadioButtonList1" runat="server" AutoPostBack="True" OnSelectedIndexChanged ="RadioButtonList1_SelectedIndexChanged">
+                    <asp:RadioButtonList ID="rbl_Res" runat="server" AutoPostBack="True" OnSelectedIndexChanged ="RadioButtonList1_SelectedIndexChanged">
                         <asp:ListItem>否</asp:ListItem>
                         <asp:ListItem>是</asp:ListItem>
                     </asp:RadioButtonList>
-                    <asp:TextBox ID="tb_Des" runat="server" Visible="False" Width="400px"></asp:TextBox>
+                    <asp:TextBox ID="tb_Des" runat="server" Visible="False" Width="400px" AutoPostBack="True"></asp:TextBox>
                 </p>
                 <p>
-                    <asp:Button ID="btn_Sub" runat="server" Text="Button" />
+                    <asp:Button ID="btn_Sub" runat="server" Text="送出" OnClick="btn_Sub_Click" />
                 </p>
                 <p>
                     <asp:Label ID="lb_Msg" runat="server"></asp:Label>
