@@ -21,9 +21,9 @@
         <asp:TextBox ID="tb_Pass" runat="server" Height="15px" Width="200px" TextMode="Password"></asp:TextBox>
         <br />
         <asp:Label ID="Label3" runat="server" Font-Size="X-Large" Text="興趣(單選)"></asp:Label>
-        <asp:RadioButton ID="RadioButton1" runat="server" AutoPostBack="True" GroupName="rbg_Interest" Text="看書" />
-        <asp:RadioButton ID="RadioButton2" runat="server" AutoPostBack="True" GroupName="rbg_Interest" Text="打電動" />
-        <asp:RadioButton ID="RadioButton3" runat="server" AutoPostBack="True" GroupName="rbg_Interest" Text="其他" />
+        <asp:RadioButton ID="RadioButton1" runat="server" AutoPostBack="True" OnCheckedChanged="RadioButton1_CheckedChanged1" GroupName="rbg_Interest" Text="看書" />
+        <asp:RadioButton ID="RadioButton2" runat="server" AutoPostBack="True" OnCheckedChanged="RadioButton2_CheckedChanged" GroupName="rbg_Interest" Text="打電動" />
+        <asp:RadioButton ID="RadioButton3" runat="server" AutoPostBack="True" OnCheckedChanged="RadioButton3_CheckedChanged" GroupName="rbg_Interest" Text="其他" />
         <br />
         <asp:Label ID="Label4" runat="server" Font-Size="X-Large" Text="其他連結"></asp:Label>
         <asp:HyperLink ID="HyperLink1" runat="server" Height="30px" ImageUrl="aws-brands.svg" NavigateUrl="https://aws.amazon.com/tw/" Width="30px">HyperLink</asp:HyperLink>

@@ -15,5 +15,20 @@ namespace _109_2Mid {
         {
 
         }
+
+        protected void RadioButton1_CheckedChanged1(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void RadioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void RadioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
